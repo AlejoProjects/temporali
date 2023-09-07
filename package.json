@@ -1,0 +1,21 @@
+{
+  "name": "9_backend_casi_avanzado_xd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "knex":"knex init",
+    "knex_migrations":"knex migrate:make empresa && knex migrate:make persona && knex migrate:make servicios && knex migrate:make habilidades",
+    "knex_latest":"knex migrate:latest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "knex": "^2.5.1",
+    "pg": "^8.11.2"
+  }
+}
